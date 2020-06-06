@@ -21,3 +21,10 @@ int main()
     double tax = itemprice * salestax;
     double totalprice = itemprice + tax;
 
+    cout << "Customer Receipt: $" << totalprice << ", Price: " << itemprice << " + Tax: " << tax << ", for product " << item << "\n";
+
+    bool MyBoolValue;
+    MyBoolValue = true;
+    cout << "My Boolean Value holds: " << MyBoolValue;
+    return 0;
+}
