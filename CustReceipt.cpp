@@ -21,7 +21,3 @@ int main()
     double tax = itemprice * salestax;
     double totalprice = itemprice + tax;
 
-    cout << "Customer Receipt: $" << totalprice << ", Price: " << itemprice << " + Tax: " << tax << ", for product " << item;
-    return 0;
-
-}
