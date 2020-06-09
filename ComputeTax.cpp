@@ -29,17 +29,41 @@
 //Calculate the tax
 //Display amount taxed.
 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main()
 {
     //Get dollar value from user
     float x;
     cout << "Enter dollar amount to calculate tax:";
     cin >> x; 
+    
     //Determine which tax percentage will be applied using the following rules:
     ////If the dollar value is less than 50 the tax is 5%
+    float tax;
+    if (x < 50)
+        tax = 0.05;
     ////if the dollar value is 50 or greater but less than 100 the tax is 8%
+    else if (x < 100)
+        tax = 0.08;
     ////if the dollar value at least 100 but less than 200 the tax is 10%
+    else if (x < 200)
+        tax = 0.10;
     ////Otherwise, if the dollar value is 200 and above then the tax is 12%.
-    //Calculate the tax
+    else
+        tax = 0.12;
+    
+    //Calculate the tax.
+    float taxpaid = x * tax;
+
+    //Format variable data for display message
+    tax = tax * 100;
+    
     //Display amount taxed.
-}
+    cout << setprecision(2) << fixed;
+    cout << setw(12) << "Dollar Amount" << setw(12) << "Tax Rate" << setw(12) << "Tax Amount\n";
+    cout << setw(12) << x << setw(12) << tax << setw(12) << taxpaid << "\n";
+    return 0;
+}   
