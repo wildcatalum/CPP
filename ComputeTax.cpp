@@ -43,10 +43,10 @@ int main()
     //Determine which tax percentage will be applied using the following rules:
     ////If the dollar value is less than 50 the tax is 5%
     float tax;
-    if (x < 50)
+    if (x < 50) // (x <= 50)
         tax = 0.05;
     ////if the dollar value is 50 or greater but less than 100 the tax is 8%
-    else if (x < 100)
+    else if (x < 100) // (x >= 15 && x <= 30) this results in unnecessary CPU processing in wasted comparisons. Highlights decision structure in relational operations.
         tax = 0.08;
     ////if the dollar value at least 100 but less than 200 the tax is 10%
     else if (x < 200)
