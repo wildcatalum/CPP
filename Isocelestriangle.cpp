@@ -5,7 +5,7 @@
 //Let's continue developing our IsoscelesTriangle.cpp to incorporate the 
 //concepts of taking String datatype as input from the user and formatting our output to look nice.
 
-//Assignment 4 - 
+//Assignment 4
 ///Purpose: Calculate the area and perimeter of an isoceles triangle given by base and height variables input by user via the console. 
 ///Input: base, height
 ///Process: Calcluate the length of the triangle. Calculate the area and perimter
