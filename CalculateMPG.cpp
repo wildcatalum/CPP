@@ -1,5 +1,5 @@
-#include <iostream>
-#include <string>
+#include <iostream> //header file
+#include <string>   //header file
 using namespace std;
 
  int main()
